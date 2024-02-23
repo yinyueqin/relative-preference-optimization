@@ -4,11 +4,10 @@
 
 This repository provides the official PyTorch implementation for the following paper:
 
-**Relative Preference Optimization: Enhancing LLM Alignment through Contrasting Responses across Identical and Diverse Prompts**<br>
+**Relative Preference Optimization: Enhancing LLM Alignment through Contrasting Responses across Identical and Diverse Prompts** [[**Arxiv**]](https://arxiv.org/abs/2402.10958) <br> 
 [Yueqin Yin](https://scholar.google.com/citations?user=HhEo-1cAAAAJ&hl=zh-CN)\*, [Zhendong Wang](https://scholar.google.com/citations?user=lRiIjhcAAAAJ&hl=en)\*, [Yi Gu](https://www.linkedin.com/in/yi-gu-6b19991aa), [Hai Huang](https://www.linkedin.com/in/hai-huang-google/?utm_source=share&utm_medium=member_mweb&utm_campaign=share_via&utm_content=profile), [Weizhu Chen](http://scholar.google.com/citations?user=LG_E-4EAAAAJ&hl=zh-CN) and [Mingyuan Zhou](https://mingyuanzhou.github.io/)<br>
 (* denotes equal contribution)<br>
 The University of Texas At Austin, Microsoft Azure AI, Google<br>
-[**Arxiv**](https://arxiv.org/abs/2402.10958)
 > **Abstract:** *In the field of large language models (LLMs), aligning models with the diverse preferences of users is a critical challenge. Direct Preference Optimization (DPO) has played a key role in this area. It works by using pairs of preferences derived from the same prompts, and it functions without needing an additional reward model. However, DPO does not fully reflect the complex nature of human learning, which often involves understanding contrasting responses to not only identical but also similar questions. To overcome this shortfall, we propose Relative Preference Optimization (RPO). RPO is designed to discern between more and less preferred responses derived from both identical and related prompts. It introduces a contrastive weighting mechanism, enabling the tuning of LLMs using a broader range of preference data, including both paired and unpaired sets. This approach expands the learning capabilities of the model, allowing it to leverage insights from a more varied set of prompts. Through empirical tests, including dialogue and summarization tasks, and evaluations using the AlpacaEval2.0 leaderboard, RPO has demonstrated a superior ability to align LLMs with user preferences and to improve their adaptability during the training-process.*
 
 

@@ -468,8 +468,6 @@ class BasicTrainer(object):
                     torch.cuda.empty_cache()
             else:
                 rank0_print(f'skipping logging after {self.example_counter} examples to avoid logging too frequently')
-
-            break
         
     def clip_gradient(self):
         """Clip the gradient norm of the parameters of a non-FSDP policy."""
@@ -832,8 +830,7 @@ class RPOTrainer(PairedPreferenceTrainer):
 
         return losses, chosen_rewards, rejected_rewards
 
-
-class UnpairdRPOTrainer(UnpairedPreferenceTrainer):
+class RPOUnpairedTrainer(UnpairedPreferenceTrainer):
        def loss(self,
              policy_chosen_logps: torch.FloatTensor,
              policy_rejected_logps: torch.FloatTensor,
