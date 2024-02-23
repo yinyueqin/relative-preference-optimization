@@ -1,0 +1,11 @@
+# Identity Preference Optimization
+name: ipo
+
+# the temperature parameter for IPO; lower values mean we care less about the reference model
+beta: 0.1
+
+trainer: IPOTrainer
+
+dataloader: PairedPreferenceDataLoader
+
+use_reference_model: true

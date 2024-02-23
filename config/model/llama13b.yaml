@@ -1,0 +1,6 @@
+defaults:
+  - base_model
+
+name_or_path: NousResearch/Llama-2-13b-hf
+block_name: LlamaDecoderLayer
+use_flash_attention: true

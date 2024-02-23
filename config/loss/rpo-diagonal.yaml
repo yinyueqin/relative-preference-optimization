@@ -1,0 +1,14 @@
+# do RPO training with diagonal emphasis
+name: rpo-diagonal
+
+# The temperature parameter for RPO-Diagonal; lower values mean we care less about the reference model
+beta: 0.1
+
+# The weight for the diagonal iterms in RPO-Diagonal; higher values mean more emphasis on the diagonal
+diagonal_weight: 0.8
+
+trainer: RPODiagonalTrainer
+
+dataloader: PairedPreferenceDataLoader
+
+use_reference_model: true 

@@ -1,0 +1,16 @@
+# do RPO paired training
+name: rpo-paired
+
+# the temperature parameter for RPO; lower values mean we care less about the reference model
+beta: 0.1
+
+# the temperature to control the influence of cosine distances of prompts on weights
+distance_temperature: 0.5
+
+trainer: RPOTrainer
+
+dataloader: PairedPreferenceDataLoader
+
+use_reference_model: true
+
+sentence_transformer_name_or_path: all-MiniLM-L6-v2
